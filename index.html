@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        const values = [
+            `<h2>First Bit Solutions, Pune @ IT Training: Fullstack Java</h2>
+                    <p>July 2023 - December 2023</p>
+                    <ul>
+                        <li>currently Training for Fullstack Java at First Bit Solutions, Pune</li>
+                    </ul>`,
+            `<h2>Swami Ramanand Teerth Marathwada University,Nanded @ BCA</h2>
+                    <p>Augest 2020 - June 2023</p>
+                    <ul>
+                        <li>Got into Dayanand College of Commerce Latur.</li>
+                        <li>Completed my Bachelors Degree on Computer Application and Engineering from there with 82.67% (CGPA: 9.08).</li>
+                        <li>Attending the Tech Fests, learning new things and Enjoying the Journey.</li>
+                    </ul>`,
+            `<h2>Ramakrishna Paramahansa college Osmanabad @ Maharashtra Board : 12th</h2>
+                    <p>Mar 2019 - june 2020</p>
+                    <ul>
+                        <li>completed my 12th from Ramakrishna Paramahansa college Osmanabad</li>
+                        <li>Came out with a marks of 55.23%, where my core subject is Science</li>
+                    </ul>`,
+            `<h2>Shripatarao Bhosale High-School Osmanabad @ Maharashtra Board : 10th</h2>
+                    <p>Mar 2017 - june 2018</p>
+                    <ul>
+                        <li>completed my 10th from Shripatarao Bhosale High-School Osmanabad</li>
+                        <li>Came out with a marks of 66.20%.</li>
+                    </ul>`
+        ];
+        function onbuttonhandler(value) {
+            switch (value) {
+                case "fullStack":
+                    document.getElementById("output").innerHTML = values[0];
+                    break;
+                case "bca":
+                    document.getElementById("output").innerHTML = values[1];
+                    break;
+                case "hsc":
+                    document.getElementById("output").innerHTML = values[2];
+                    break;
+                case "ssc":
+                    document.getElementById("output").innerHTML = values[3];
+                    break;
+                default:
+                    alert("I don't know what the f*ck is going on");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home"><img class="icons" src="./home-icon.png" alt=""></a></li>
+                <li><a href="#about"><img class="icons-plus" src="./user-icon.png" alt=""></a></li>
+                <li><a href="#education"><img class="icons-plus" src="./icon-edu.png" alt=""></a></li>
+                <li><a href="#skill"><img class="icons-plus" src="./icon-skills.png" alt=""></a></li>
+                <li><a href="#getintouch"><img class="icons-plus" src="./mail-icon.png" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="home" id="home">
+            <div class="leftSection">
+                <div class="home-content">
+                    <h1>Samarth Umbare</h1>
+                    <h2>Hi, My name is Samarth</h2>
+                    <h2>and I am a passionate</h2>
+                    <span id="element"></span>
+                    <div class="rightSection"><img src="/bg.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <!-- <hr> -->
+        <section id="about" class="about">
+            <h1>About Me</h1>
+            <div>
+                <div class="about-pic"><img src="about-pic3.jpg" alt=""></div>
+                <div class="about-info">
+                    <p>Hello, my name is Samarth Umbare. I am a recent graduate with a Bachelor's degree in Computer
+                        Application and a strong passion for Software Development. Currently residing in Pune,
+                        Maharashtra,
+                        India.</p>
+                    <p>I am a Java Developer and also have expertise in Web Development like html, css, javascript.
+                        Throughout my academic journey I have completed various programming projects, gaining a solid
+                        understanding of Software Development principles and best practices</p>
+                    <p>
+                        I possess proficiency in html, css and javascript and also in Java, C/C++, SQL, PHP. As a quick
+                        learner, I constantly strive to enhance my skills and keep up with the latest trends in Software
+                        development.
+                    </p>
+                    <p>
+                        I am enthusiastic about starting my career as a Software developer and eagerly look forward to
+                        working on challenging projects that will facilitate my growth in this field. For further
+                        information, you can refer to my personal website, portfolio, and GitHub account.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="education" class="education">
+            <h1>Educational Journey </h1>
+            <div>
+                <div class="education-subject">
+                    <button onclick="onbuttonhandler('fullStack')" class="btn">Full-Stack Java</button>
+                    <button onclick="onbuttonhandler('bca')" class="btn">BCA</button>
+                    <button onclick="onbuttonhandler('hsc')" class="btn">Maharashtra Board : 12th</button>
+                    <button onclick="onbuttonhandler('ssc')" class="btn">Maharashtra Board : 10th</button>
+                </div>
+                <div class="education-details" id="output">
+                    <script>
+                        document.getElementById("output").innerHTML = values[0];
+                    </script>
+                </div>
+            </div>
+        </section>
+        <!-- <hr> -->
+        <section class="skill" id="skill">
+            <h1>My Skills </h1>
+            <div class="skillBox">
+                <div class="innerSkillBox">
+                    <p>HTML</p>
+                    <div class="container">
+                        <div class="skills html">90%</div>
+                    </div>
+                    <p>CSS</p>
+                    <div class="container">
+                        <div class="skills css">80%</div>
+                    </div>
+                    <p>Javascript</p>
+                    <div class="container">
+                        <div class="skills js">50%</div>
+                    </div>
+                </div>
+                <div class="innerSkillBox">
+                    <p>C/C++</p>
+                    <div class="container">
+                        <div class="skills cplus">65%</div>
+                    </div>
+                    <p>Java</p>
+                    <div class="container">
+                        <div class="skills java">70%</div>
+                    </div>
+                    <p>PHP</p>
+                    <div class="container">
+                        <div class="skills php">60%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="getintouch" id="getintouch">
+            <h1>Get in touch</h1>
+            <div>
+                <div class="touch-desc">
+                    <h2>Let's talk about everything!</h2>
+                    <p>Don't like forms? Send me an email. 👋</p>
+                </div>
+                <div class="touch-input">
+                    <input type="text" placeholder="Enter your name" id="uname">
+                    <input type="text" placeholder="Enter your email" id="email">
+                    <input type="text" placeholder="Enter your subject" id="subject">
+                    <textarea name="message" placeholder="Enter your message here" id="msg" cols="30"
+                        rows="10"></textarea>
+                    <input type="button" id="submit" value="Send Message">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>Let's connect on</h3>
+        <div>
+            <a href="https://www.linkedin.com/in/samarth-umbare-4035a2241/" target="_blank"><img class="icons-plus"
+                    src="icon-linkedin.png" alt=""></a>
+            <a href="https://github.com/VENOMxSAM" target="_blank"><img class="icons-plus" src="icon-git.png"
+                    alt=""></a>
+            <a href="https://www.instagram.com/its_sam_127.0.0.1/" target="_blank"><img class="icons-plus"
+                    src="icon-insta.png" alt=""></a>
+        </div>
+        <h4>Copyright &#169 Samarth's-portfolio | All rights reserved</h4>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Front-end Developer.', 'Back-end Developer.', 'basically a Fullstack Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
