@@ -65,7 +65,7 @@ nav ul li a {
     border: 1px solid black;
     /* background-color: slateblue; */
     background: rgba(255, 255, 255, 0.5);
-    height: 100vh;
+    height: max-content;
     display: flex;
     /* align-items: center; */
     /* justify-content: center; */
@@ -346,7 +346,7 @@ h1 {
 
 .getintouch {
     /* border: 1px solid black; */
-    height: 80vh;
+    height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -358,6 +358,8 @@ h1 {
     display: flex;
     /* border: 1px solid black; */
     width: max-content;
+    flex-direction:initial;
+
 }
 
 .touch-desc {
