@@ -60,6 +60,11 @@
 
 <body>
     <header>
+        <div class="menu-container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
         <nav>
             <ul>
                 <li><a href="#home"><img class="icons" src="./home-icon.png" alt=""></a></li>
@@ -194,6 +199,13 @@
             strings: ['Front-end Developer.', 'Back-end Developer.', 'basically a Fullstack Developer.'],
             typeSpeed: 50,
         });
+    </script>
+
+    <!-- menu button script -->
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
     </script>
 </body>
 
